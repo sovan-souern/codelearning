@@ -1,0 +1,253 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    /* fontzionale: 1.8rem; */
+    color: #ff5733 !important;
+}
+
+.navbar-brand .khmer-text {
+    color: #00c4b4;
+}
+
+.nav-link {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1rem;
+    color: #333 !important;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff5733 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1516321310766-61f6f.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.main-text {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sub-text {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.code { color: #ff5733; }
+.khmer { color: #00c4b4; }
+.learning { color: #f4c542; }
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-cta {
+    background: #ff5733;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ff5733;
+}
+
+/* Courses Section */
+.courses-section {
+    padding: 2rem 0;
+}
+
+.section-title {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 2.5rem;
+    color: #ff5733;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-content h5 {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.course-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.btn-learn-more {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    background: #00c4b4;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    align-self: flex-start;
+    transition: background 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background: #009faf;
+}
+
+/* Footer */
+.footer {
+    background: gray;
+    color: #fff;
+}
+
+.footer h4, .footer h5 {
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00c4b4;
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .main-text { font-size: 2.5rem; }
+    .sub-text { font-size: 1.8rem; }
+    .description { font-size: 1rem; }
+    .hero-section { height: 50vh; }
+    .section-title { font-size: 2rem; }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand { font-size: 1.5rem; }
+    .nav-link { font-size: 0.9rem; }
+    .main-text { font-size: 2rem; }
+    .sub-text { font-size: 1.5rem; }
+    .course-card img { height: 150px; }
+}

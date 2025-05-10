@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="រៀន Python ជាមួយ CodeKhmerLearning ដើម្បីសរសេរកម្មវិធីប្រកបដោយភាពងាយស្រួល!">
+    <meta name="keywords" content="Python, សរសេរកម្មវិធី, កម្មវិធីភាសាខ្មែរ, CodeKhmerLearning">
+    <meta name="author" content="CodeKhmerLearning">
+    <title>មេរៀន Python - CodeKhmerLearning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="../css/python.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Code<span class="khmer-text">Khmer</span>Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/about.html">អំពី</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="main-text">មេរៀន Python</h1>
+                <p class="description">រៀន Python ដើម្បីបង្កើតកម្មវិធីប្រកបដោយភាពងាយស្រួលនិងប្រសិទ្ធភាព!</p>
+                <a href="#content" class="btn btn-cta mt-3">ចាប់ផ្តើមឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar and Content -->
+    <div class="container-flex d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h4>មេរៀន Python</h4>
+                <button class="sidebar-toggle btn btn-primary d-md-none">បិទ/បើកម៉ឺនុយ</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="search-container mb-3">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="ស្វែងរកមេរៀន..." aria-label="ស្វែងរកមេរៀន">
+                    </div>
+                </div>
+                <ul class="lesson-list">
+                    <li><a href="#introduction">1. ការណែនាំអំពី Python</a></li>
+                    <li><a href="#overview">1.1. សេចក្តីពិពណ៌នាអំពី Python</a></li>
+                    <li><a href="#setup">1.2. ការដំឡើង Python</a></li>
+                    <li><a href="#variables">2. អថេរនិងប្រភេទទិន្នន័យ</a></li>
+                    <li><a href="#operators">3. ប្រតិបត្តិករ</a></li>
+                    <li><a href="#conditionals">4. លក្ខខណ្ឌ</a></li>
+                    <li><a href="#loops">5. រង្វិលជុំ</a></li>
+                    <li><a href="#functions">6. អនុគមន៍</a></li>
+                    <li><a href="#lists">7. បញ្ជី (Lists)</a></li>
+                    <li><a href="#dictionaries">8. វចនានុក្រម (Dictionaries)</a></li>
+                    <li><a href="#modules">9. ម៉ូឌុលនិងកញ្ចប់</a></li>
+                    <li><a href="#bestpractices">10. ការអនុវត្តល្អបំផុត</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content" id="content">
+            <h1 id="introduction">1. ការណែនាំអំពី Python</h1>
+            <p>Python ជាភាសាសរសេរកម្មវិធីដែលងាយស្រួលរៀននិងប្រើប្រាស់។</p>
+            <p>វាត្រូវបានប្រើសម្រាប់ការអភិវឌ្ឍគេហទំព័រ ការវិភាគទិន្នន័យ និងអនុគមន៍សិប្បនិម្មិត។</p>
+
+            <h2 id="overview">1.1. សេចក្តីពិពណ៌នាអំពី Python</h2>
+            <p>Python មានវាក្យសម្ព័ន្ធសាមញ្ញ និងអាចអានបាន។</p>
+            <p>វាគាំទ្រការសរសេរកម្មវិធីបែបវត្ថុនិយម និងមុខងារនិយម។</p>
+
+            <h2 id="setup">1.2. ការដំឡើង Python</h2>
+            <p>ទាញយក Python ពី python.org។</p>
+            <p>ដំឡើងនៅលើ Windows, Mac, ឬ Linux ហើយពិនិត្យកំណែ។</p>
+            <pre><code class="language-python"># ពិនិត្យកំណែ Python
+import sys
+print(sys.version)
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>ពិនិត្យកំណែ Python។</p>
+                <div class="code-editor" id="editor1"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output1"></div>
+            </div>
+
+            <h2 id="variables">2. អថេរនិងប្រភេទទិន្នន័យ</h2>
+            <p>អថេរគឺជាកន្លែងរក្សាទុកទិន្នន័យ។</p>
+            <p>Python មានប្រភេទទិន្នន័យដូចជា ចំនួនគត់ អក្សរ និងបញ្ជី។</p>
+            <pre><code class="language-python">name = "Sokha"
+age = 25
+height = 1.75
+is_student = True
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតអថេរនិងបោះពុម្ពវា។</p>
+                <div class="code-editor" id="editor2"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output2"></div>
+            </div>
+
+            <h2 id="operators">3. ប្រតិបត្តិករ</h2>
+            <p>ប្រតិបត្តិករប្រើសម្រាប់គណនានិងប្រៀបធៀប។</p>
+            <p>រួមមាន + , - , * , / , == , និង != ។</p>
+            <pre><code class="language-python">a = 10
+b = 5
+sum = a + b
+is_equal = a == b
+</code></pre>
+
+            <h2 id="conditionals">4. លក្ខខណ្ឌ</h2>
+            <p>ប្រើ if, elif, else ដើម្បីសម្រេចចិត្ត។</p>
+            <p>ឧទាហរណ៍ ពិនិត្យអាយុ។</p>
+            <pre><code class="language-python">age = 18
+if age >= 18:
+    print("អ្នកជាមនុស្សពេញវ័យ")
+else:
+    print("អ្នកនៅក្មេង")
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>សរសេរលក្ខខណ្ឌដើម្បីពិនិត្យអាយុ។</p>
+                <div class="code-editor" id="editor3"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output3"></div>
+            </div>
+
+            <h2 id="loops">5. រង្វិលជុំ</h2>
+            <p>ប្រើ for និង while ដើម្បីធ្វើសកម្មភាពម្តងហើយម្តងទៀត។</p>
+            <p>ឧទាហរណ៍ បោះពុម្ពលេខ 1 ដល់ 5។</p>
+            <pre><code class="language-python">for i in range(1, 6):
+    print(i)
+</code></pre>
+
+            <h2 id="functions">6. អនុគមន៍</h2>
+            <p>អនុគមន៍ជាបណ្តុំនៃកូដដែលអាចប្រើឡើងវិញបាន។</p>
+            <p>ប្រើ def ដើម្បីកំណត់អនុគមន៍។</p>
+            <pre><code class="language-python">def greet(name):
+    return f"សួស្តី {name}!"
+print(greet("Sokha"))
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតអនុគមន៍សម្រាប់សួស្តី។</p>
+                <div class="code-editor" id="editor4"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output4"></div>
+            </div>
+
+            <h2 id="lists">7. បញ្ជី (Lists)</h2>
+            <p>បញ្ជីជាកន្លែងរក្សាទុកទិន្នន័យជាច្រើន។</p>
+            <p>អាចបន្ថែម លុប ឬកែទិន្នន័យ។</p>
+            <pre><code class="language-python">fruits = ["ផ្លែប៉ោម", "ចេក", "ស្វាយ"]
+fruits.append("ទំពាំងបាយជូ")
+print(fruits)
+</code></pre>
+
+            <h2 id="dictionaries">8. វចនានុក្រម (Dictionaries)</h2>
+            <p>វចនានុក្រមរក្សាទុកទិន្នន័យជាគូ key-value។</p>
+            <p>ឧទាហរណ៍ ព័ត៌មានសិស្ស។</p>
+            <pre><code class="language-python">student = {"name": "Sokha", "age": 25}
+print(student["name"])
+</code></pre>
+
+            <h2 id="modules">9. ម៉ូឌុលនិងកញ្ចប់</h2>
+            <p>ម៉ូឌុលជួយរៀបចំកូដ។</p>
+            <p>ឧទាហរណ៍ ប្រើម៉ូឌុល math។</p>
+            <pre><code class="language-python">import math
+print(math.sqrt(16))
+</code></pre>
+
+            <h2 id="bestpractices">10. ការអនុវត្តល្អបំផុត</h2>
+            <p>សរសេរកូដឱ្យច្បាស់លាស់និងអាចអានបាន។</p>
+            <p>ប្រើមតិយោបល់ (comments) និងឈ្មោះអថេរដែលមានន័យ។</p>
+            <pre><code class="language-python"># គណនាផ្ទៃក្រឡាការ៉េ
+side = 5
+area = side * side
+print(f"ផ្ទៃក្រឡាការ៉េ: {area}")
+</code></pre>
+        </div>
+    </div>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/CodeKhmerLearning" class="floating-button" aria-label="ចូល Telegram">
+        <i class="fab fa-telegram-plane"></i> ចូល Telegram
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="khmer-text">CodeKhmerLearning</h4>
+                    <p>ផ្តល់អំណាចដល់ជំនាន់ក្រោយនៃអ្នកសរសេរកូដជាមួយនឹងមោទនភាពខ្មែរ។</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">ទំព័រដើម</a></li>
+                        <li><a href="../page/about.html">អំពី</a></li>
+                        <li><a href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ភ្ជាប់ទំនាក់ទំនង</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mt-3">© ២០២៥ CodeKhmerLearning. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script>
+        // Sidebar toggle for mobile
+        document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+            const sidebarContent = document.querySelector('.sidebar-content');
+            sidebarContent.classList.toggle('active');
+        });
+
+        // Search functionality
+        document.querySelector('.search-box input').addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            document.querySelectorAll('.lesson-list a').forEach(link => {
+                const text = link.textContent.toLowerCase();
+                link.parentElement.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        });
+
+        // Initialize Ace Editor
+        const editors = document.querySelectorAll('.code-editor');
+        editors.forEach((editor, index) => {
+            const aceEditor = ace.edit(editor);
+            aceEditor.setTheme('ace/theme/monokai');
+            aceEditor.session.setMode('ace/mode/python');
+            let defaultCode = `import sys\nprint(sys.version)`;
+            if (index === 1) { // Variables
+                defaultCode = `name = "Sokha"\nprint(name)`;
+            } else if (index === 2) { // Conditionals
+                defaultCode = `age = 18\nif age >= 18:\n    print("អ្នកជាមនុស្សពេញវ័យ")\nelse:\n    print("អ្នកនៅក្មេង")`;
+            } else if (index === 3) { // Functions
+                defaultCode = `def greet(name):\n    return f"សួស្តី {name}!"\nprint(greet("Sokha"))`;
+            }
+            aceEditor.setValue(defaultCode);
+        });
+
+        // Simulate Python command output
+        document.querySelectorAll('.run-code').forEach(button => {
+            button.addEventListener('click', () => {
+                const editor = button.previousElementSibling.querySelector('.code-editor');
+                const aceEditor = ace.edit(editor);
+                const code = aceEditor.getValue().trim();
+                const output = button.nextElementSibling;
+                let result = '';
+                if (code === 'import sys\nprint(sys.version)') {
+                    result = '3.11.4 (main, Jul  5 2023, 13:45:01) [GCC 11.2.0]';
+                } else if (code === 'name = "Sokha"\nprint(name)') {
+                    result = 'Sokha';
+                } else if (code === 'age = 18\nif age >= 18:\n    print("អ្នកជាមនុស្សពេញវ័យ")\nelse:\n    print("អ្នកនៅក្មេង")') {
+                    result = 'អ្នកជាមនុស្សពេញវ័យ';
+                } else if (code === 'def greet(name):\n    return f"សួស្តី {name}!"\nprint(greet("Sokha"))') {
+                    result = 'សួស្តី Sokha!';
+                } else {
+                    result = 'Error: Unrecognized code or invalid syntax';
+                }
+                output.innerHTML = `<pre style="margin:0;padding:0;background:none;border:none;">${result}</pre>`;
+            });
+        });
+    </script>
+</body>
+</html>

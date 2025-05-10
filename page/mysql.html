@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="រៀន MySQL ជាមួយ CodeKhmerLearning ដើម្បីគ្រប់គ្រងទិន្នន័យប្រកបដោយប្រសិទ្ធភាព!">
+    <meta name="keywords" content="MySQL, មូលដ្ឋានទិន្នន័យ, SQL, ខ្មែរ, CodeKhmerLearning">
+    <meta name="author" content="CodeKhmerLearning">
+    <title>មេរៀន MySQL - CodeKhmerLearning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="../css/mysql.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Code<span class="khmer-text">Khmer</span>Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/about.html">អំពី</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="main-text">មេរៀន MySQL</h1>
+                <p class="description">រៀន MySQL ដើម្បីគ្រប់គ្រងនិងសួរយកទិន្នន័យពីមូលដ្ឋានទិន្នន័យ!</p>
+                <a href="#content" class="btn btn-cta mt-3">ចាប់ផ្តើមឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar and Content -->
+    <div class="container-flex d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h4>មេរៀន MySQL</h4>
+                <button class="sidebar-toggle btn btn-primary d-md-none">បិទ/បើកម៉ឺនុយ</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="search-container mb-3">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="ស្វែងរកមេរៀន..." aria-label="ស្វែងរកមេរៀន">
+                    </div>
+                </div>
+                <ul class="lesson-list">
+                    <li><a href="#introduction">1. ការណែនាំអំពី MySQL</a></li>
+                    <li><a href="#overview">1.1. សេចក្តីពិពណ៌នាអំពី MySQL</a></li>
+                    <li><a href="#setup">1.2. ការដំឡើង MySQL</a></li>
+                    <li><a href="#database">2. បង្កើតនិងគ្រប់គ្រងមូលដ្ឋានទិន្នន័យ</a></li>
+                    <li><a href="#tables">3. បង្កើតនិងគ្រប់គ្រងតារាង</a></li>
+                    <li><a href="#insert">4. បញ្ចូលទិន្នន័យ</a></li>
+                    <li><a href="#select">5. សួរយកទិន្នន័យ</a></li>
+                    <li><a href="#update">6. ធ្វើបច្ចុប្បន្នភាពទិន្នន័យ</a></li>
+                    <li><a href="#delete">7. លុបទិន្នន័យ</a></li>
+                    <li><a href="#joins">8. ការភ្ជាប់តារាង (Joins)</a></li>
+                    <li><a href="#indexes">9. សន្ទស្សន៍ (Indexes)</a></li>
+                    <li><a href="#bestpractices">10. ការអនុវត្តល្អបំផុត</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content" id="content">
+            <h1 id="introduction">1. ការណែនាំអំពី MySQL</h1>
+            <p>MySQL ជាប្រព័ន្ធគ្រប់គ្រងមូលដ្ឋានទិន្នន័យទំនាក់ទំនង (Relational Database Management System)។</p>
+            <p>វាប្រើ SQL (Structured Query Language) ដើម្បីគ្រប់គ្រងទិន្នន័យ។</p>
+
+            <h2 id="overview">1.1. សេចក្តីពិពណ៌នាអំពី MySQL</h2>
+            <p>MySQL មានល្បឿនលឿន និងអាចប្រើបានសម្រាប់គម្រោងតូចធំ។</p>
+            <p>វាត្រូវបានប្រើជាទូទៅក្នុងការអភិវឌ្ឍគេហទំព័រ។</p>
+
+            <h2 id="setup">1.2. ការដំឡើង MySQL</h2>
+            <p>ទាញយក MySQL ពី mysql.com។</p>
+            <p>ដំឡើងនៅលើ Windows, Mac, ឬ Linux ហើយពិនិត្យកំណែ។</p>
+            <pre><code class="language-sql">SELECT VERSION();
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>ពិនិត្យកំណែ MySQL។</p>
+                <div class="code-editor" id="editor1"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output1"></div>
+            </div>
+
+            <h2 id="database">2. បង្កើតនិងគ្រប់គ្រងមូលដ្ឋានទិន្នន័យ</h2>
+            <p>បង្កើតមូលដ្ឋានទិន្នន័យដើម្បីរក្សាទុកទិន្នន័យ។</p>
+            <p>ប្រើ <code>CREATE DATABASE</code> និង <code>USE</code>។</p>
+            <pre><code class="language-sql">CREATE DATABASE school;
+USE school;
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតមូលដ្ឋានទិន្នន័យថ្មី។</p>
+                <div class="code-editor" id="editor2"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output2"></div>
+            </div>
+
+            <h2 id="tables">3. បង្កើតនិងគ្រប់គ្រងតារាង</h2>
+            <p>តារាងរក្សាទុកទិន្នន័យក្នុងជួរនិងជួរឈរ។</p>
+            <p>ប្រើ <code>CREATE TABLE</code> ដើម្បីបង្កើតតារាង។</p>
+            <pre><code class="language-sql">CREATE TABLE students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    age INT
+);
+</code></pre>
+
+            <h2 id="insert">4. បញ្ចូលទិន្នន័យ</h2>
+            <p>បញ្ចូលទិន្នន័យទៅក្នុងតារាងដោយប្រើ <code>INSERT INTO</code>។</p>
+            <pre><code class="language-sql">INSERT INTO students (name, age) VALUES ('Sokha', 20);
+INSERT INTO students (name, age) VALUES ('Reth', 22);
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បញ្ចូលទិន្នន័យសិស្សទៅក្នុងតារាង។</p>
+                <div class="code-editor" id="editor3"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output3"></div>
+            </div>
+
+            <h2 id="select">5. សួរយកទិន្នន័យ</h2>
+            <p>ប្រើ <code>SELECT</code> ដើម្បីសួរយកទិន្នន័យពីតារាង។</p>
+            <p>ឧទាហរណ៍ ទាញយកសិស្សទាំងអស់។</p>
+            <pre><code class="language-sql">SELECT * FROM students;
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>សួរយកទិន្នន័យសិស្សទាំងអស់។</p>
+                <div class="code-editor" id="editor4"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output4"></div>
+            </div>
+
+            <h2 id="update">6. ធ្វើបច្ចុប្បន្នភាពទិន្នន័យ</h2>
+            <p>ប្រើ <code>UPDATE</code> ដើម្បីកែប្រែទិន្នន័យ។</p>
+            <p>ឧទាហរណ៍ ផ្លាស់ប្តូរអាយុរបស់សិស្ស។</p>
+            <pre><code class="language-sql">UPDATE students SET age = 21 WHERE name = 'Sokha';
+</code></pre>
+
+            <h2 id="delete">7. លុបទិន្នន័យ</h2>
+            <p>ប្រើ <code>DELETE</code> ដើម្បីលុបទិន្នន័យចេញពីតារាង។</p>
+            <p>ឧទាហរណ៍ លុបសិស្សម្នាក់។</p>
+            <pre><code class="language-sql">DELETE FROM students WHERE name = 'Reth';
+</code></pre>
+
+            <h2 id="joins">8. ការភ្ជាប់តារាង (Joins)</h2>
+            <p>ប្រើ <code>JOIN</code> ដើម្បីភ្ជាប់ទិន្នន័យពីតារាងច្រើន។</p>
+            <p>ឧទាហរណ៍ ភ្ជាប់តារាងសិស្សនិងវគ្គសិក្សា។</p>
+            <pre><code class="language-sql">CREATE TABLE courses (
+    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(50),
+    student_id INT
+);
+INSERT INTO courses (course_name, student_id) VALUES ('Math', 1);
+SELECT students.name, courses.course_name
+FROM students
+INNER JOIN courses ON students.id = courses.student_id;
+</code></pre>
+
+            <h2 id="indexes">9. សន្ទស្សន៍ (Indexes)</h2>
+            <p>សន្ទស្សន៍បង្កើនល្បឿននៃការសួរយកទិន្នន័យ។</p>
+            <p>ប្រើ <code>CREATE INDEX</code> ដើម្បីបង្កើតសន្ទស្សន៍។</p>
+            <pre><code class="language-sql">CREATE INDEX idx_name ON students (name);
+</code></pre>
+
+            <h2 id="bestpractices">10. ការអនុវត្តល្អបំផុត</h2>
+            <p>ប្រើឈ្មោះតារាងនិងជួរឈរដែលមានន័យ។</p>
+            <p>បង្កើតសន្ទស្សន៍សម្រាប់ជួរឈរដែលសួរញឹកញាប់ និងប្រើទិន្នន័យប្រភេទត្រឹមត្រូវ។</p>
+            <pre><code class="language-sql">ALTER TABLE students ADD email VARCHAR(100);
+</code></pre>
+        </div>
+    </div>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/CodeKhmerLearning" class="floating-button" aria-label="ចូល Telegram">
+        <i class="fab fa-telegram-plane"></i> ចូល Telegram
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="khmer-text">CodeKhmerLearning</h4>
+                    <p>ផ្តល់អំណាចដល់ជំនាន់ក្រោយនៃអ្នកសរសេរកូដជាមួយនឹងមោទនភាពខ្មែរ។</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">ទំព័រដើម</a></li>
+                        <li><a href="../page/about.html">អំពី</a></li>
+                        <li><a href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ភ្ជាប់ទំនាក់ទំនង</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mt-3">© ២០២៥ CodeKhmerLearning. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <script src="../js/mysql.js"></script>
+</body>
+</html>
+
+<script>
+    document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+    const sidebarContent = document.querySelector('.sidebar-content');
+    sidebarContent.classList.toggle('active');
+});
+
+document.querySelector('.search-box input').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.lesson-list a').forEach(link => {
+        const text = link.textContent.toLowerCase();
+        link.parentElement.style.display = text.includes(query) ? 'block' : 'none';
+    });
+});
+
+const editors = document.querySelectorAll('.code-editor');
+editors.forEach((editor, index) => {
+    const aceEditor = ace.edit(editor);
+    aceEditor.setTheme('ace/theme/monokai');
+    aceEditor.session.setMode('ace/mode/sql');
+    let defaultCode = `SELECT VERSION();`;
+    if (index === 1) { // Create Database
+        defaultCode = `CREATE DATABASE school;\nUSE school;`;
+    } else if (index === 2) { // Insert Data
+        defaultCode = `INSERT INTO students (name, age) VALUES ('Sokha', 20);`;
+    } else if (index === 3) { // Select Data
+        defaultCode = `SELECT * FROM students;`;
+    }
+    aceEditor.setValue(defaultCode);
+});
+
+document.querySelectorAll('.run-code').forEach(button => {
+    button.addEventListener('click', () => {
+        const editor = button.previousElementSibling.querySelector('.code-editor');
+        const aceEditor = ace.edit(editor);
+        const code = aceEditor.getValue().trim();
+        const output = button.nextElementSibling;
+        let result = '';
+        if (code === 'SELECT VERSION();') {
+            result = '8.0.35';
+        } else if (code === 'CREATE DATABASE school;\nUSE school;') {
+            result = 'Database created and selected successfully.';
+        } else if (code === 'INSERT INTO students (name, age) VALUES (\'Sokha\', 20);') {
+            result = '1 row inserted.';
+        } else if (code === 'SELECT * FROM students;') {
+            result = 'id | name  | age\n1  | Sokha | 20\n2  | Reth  | 22';
+        } else {
+            result = 'Error: Unrecognized query or invalid syntax';
+        }
+        output.innerHTML = `<pre style="margin:0;padding:0;background:none;border:none;">${result}</pre>`;
+    });
+});
+</script>

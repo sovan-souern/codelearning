@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="រៀន Git ជាមួយ CodeKhmerLearning ដើម្បីគ្រប់គ្រងកូដប្រកបដោយប្រសិទ្ធភាព!">
+    <meta name="keywords" content="Git, សរសេរកម្មវិធី, ការគ្រប់គ្រងកំណែ, ខ្មែរ, CodeKhmerLearning">
+    <meta name="author" content="CodeKhmerLearning">
+    <title>មេរៀន Git - CodeKhmerLearning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="../css/git.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Code<span class="khmer-text">Khmer</span>Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/about.html">អំពី</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="main-text">មេរៀន Git</h1>
+                <p class="description">រៀន Git ដើម្បីតាមដាននិងគ្រប់គ្រងកូដរបស់អ្នក!</p>
+                <a href="#content" class="btn btn-cta mt-3">ចាប់ផ្តើមឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar and Content -->
+    <div class="container-flex d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h4>មេរៀន Git</h4>
+                <button class="sidebar-toggle btn btn-primary d-md-none">បិទ/បើកម៉ឺនុយ</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="search-container mb-3">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="ស្វែងរកមេរៀន..." aria-label="ស្វែងរកមេរៀន">
+                    </div>
+                </div>
+                <ul class="lesson-list">
+                    <li><a href="#introduction">1. ការណែនាំអំពី Git</a></li>
+                    <li><a href="#overview">1.1. សេចក្តីពិពណ៌នាអំពី Git</a></li>
+                    <li><a href="#setup">1.2. ការដំឡើង Git</a></li>
+                    <li><a href="#config">1.3. ការកំណត់ Git</a></li>
+                    <li><a href="#init">2. ការចាប់ផ្តើម Repository</a></li>
+                    <li><a href="#commit">3. ការបញ្ជូន Commit</a></li>
+                    <li><a href="#branch">4. សាខា (Branch)</a></li>
+                    <li><a href="#merge">5. ការបញ្ចូលសាខា (Merge)</a></li>
+                    <li><a href="#remote">6. Remote Repository</a></li>
+                    <li><a href="#pushpull">7. Push និង Pull</a></li>
+                    <li><a href="#conflict">8. ការដោះស្រាយបញ្ហាប៉ះទង្គិច</a></li>
+                    <li><a href="#stash">9. Stash ការផ្លាស់ប្តូរ</a></li>
+                    <li><a href="#bestpractices">10. ការអនុវត្តល្អបំផុត</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content" id="content">
+            <h1 id="introduction">1. ការណែនាំអំពី Git</h1>
+            <p>Git ជាប្រព័ន្ធគ្រប់គ្រងកំណែសម្រាប់តាមដានកូដ។</p>
+            <p>វាជួយអ្នកសហការនិងគ្រប់គ្រងគម្រោង។</p>
+
+            <h2 id="overview">1.1. សេចក្តីពិពណ៌នាអំពី Git</h2>
+            <p>Git អនុញ្ញាតឱ្យរក្សាទុកប្រវត្តិកូដ។</p>
+            <p>ប្រើសម្រាប់គម្រោងអភិវឌ្ឍន៍កម្មវិធី។</p>
+
+            <h2 id="setup">1.2. ការដំឡើង Git</h2>
+            <p>ទាញយក Git ពី git-scm.com។</p>
+            <p>ដំឡើងនៅលើ Windows, Mac, ឬ Linux។</p>
+            <pre><code class="language-bash"># ពិនិត្យកំណែ Git
+git --version
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>ពិនិត្យកំណែ Git។</p>
+                <div class="code-editor" id="editor1"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output1"></div>
+            </div>
+
+            <h2 id="config">1.3. ការកំណត់ Git</h2>
+            <p>កំណត់ឈ្មោះនិងអ៊ីមែលរបស់អ្នក។</p>
+            <p>ប្រើសម្រាប់កំណត់អត្តសញ្ញាណ commit។</p>
+            <pre><code class="language-bash">git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+</code></pre>
+
+            <h2 id="init">2. ការចាប់ផ្តើម Repository</h2>
+            <p>បង្កើត repository ដើម្បីតាមដានកូដ។</p>
+            <p>ប្រើ <code>git init</code> នៅថតគម្រោង។</p>
+            <pre><code class="language-bash">git init
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>ចាប់ផ្តើម repository ថ្មី។</p>
+                <div class="code-editor" id="editor2"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output2"></div>
+            </div>
+
+            <h2 id="commit">3. ការបញ្ជូន Commit</h2>
+            <p>Commit រក្សាទុកការផ្លាស់ប្តូរកូដ។</p>
+            <p>ប្រើ <code>git add</code> និង <code>git commit</code>។</p>
+            <pre><code class="language-bash">git add .
+git commit -m "Initial commit"
+</code></pre>
+
+            <h2 id="branch">4. សាខា (Branch)</h2>
+            <p>សាខាអនុញ្ញាតឱ្យធ្វើការលើមុខងារថ្មី។</p>
+            <p>បង្កើតសាខាដោយ <code>git branch</code>។</p>
+            <pre><code class="language-bash">git branch feature
+git checkout feature
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតនិងប្តូរទៅសាខា <code>feature</code>។</p>
+                <div class="code-editor" id="editor3"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output3"></div>
+            </div>
+
+            <h2 id="merge">5. ការបញ្ចូលសាខា (Merge)</h2>
+            <p>Merge បញ្ចូលការផ្លាស់ប្តូរពីសាខាមួយទៅសាខាមួយទៀត។</p>
+            <p>ប្រើ <code>git merge</code>។</p>
+            <pre><code class="language-bash">git checkout main
+git merge feature
+</code></pre>
+
+            <h2 id="remote">6. Remote Repository</h2>
+            <p>Remote repository រក្សាទុកកូដនៅលើ GitHub។</p>
+            <p>ភ្ជាប់ជាមួយ <code>git remote add</code>។</p>
+            <pre><code class="language-bash">git remote add origin https://github.com/user/repo.git
+</code></pre>
+
+            <h2 id="pushpull">7. Push និង Pull</h2>
+            <p>Push បញ្ជូនកូដទៅ remote; pull ទាញកូដមក។</p>
+            <p>ប្រើ <code>git push</code> និង <code>git pull</code>។</p>
+            <pre><code class="language-bash">git push origin main
+git pull origin main
+</code></pre>
+
+            <h2 id="conflict">8. ការដោះស្រាយបញ្ហាប៉ះទង្គិច</h2>
+            <p>បញ្ហាប៉ះទង្គិចកើតឡើងនៅពេល merge។</p>
+            <p>កែសម្រួលឯកសារដោយដៃ ឬប្រើឧបករណ៍។</p>
+            <pre><code class="language-bash">git merge feature
+# កែឯកសារប៉ះទង្គិច
+git add .
+git commit
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>Merge សាខា <code>feature</code> ទៅ <code>main</code>។</p>
+                <div class="code-editor" id="editor4"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output4"></div>
+            </div>
+
+            <h2 id="stash">9. Stash ការផ្លាស់ប្តូរ</h2>
+            <p>Stash រក្សាទុកការផ្លាស់ប្តូរបណ្តោះអាសន្ន។</p>
+            <p>ប្រើ <code>git stash</code> និង <code>git stash pop</code>។</p>
+            <pre><code class="language-bash">git stash
+git stash pop
+</code></pre>
+
+            <h2 id="bestpractices">10. ការអនុវត្តល្អបំផុត</h2>
+            <p>សរសេរសារ� commit ច្បាស់លាស់។</p>
+            <p>ប្រើសាខាសម្រាប់មុខងារនីមួយៗ។</p>
+            <pre><code class="language-bash">git commit -m "Add user authentication"
+</code></pre>
+        </div>
+    </div>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/CodeKhmerLearning" class="floating-button" aria-label="ចូល Telegram">
+        <i class="fab fa-telegram-plane"></i> ចូល Telegram
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="khmer-text">CodeKhmerLearning</h4>
+                    <p>ផ្តល់អំណាចដល់ជំនាន់ក្រោយនៃអ្នកសរសេរកូដជាមួយនឹងមោទនភាពខ្មែរ។</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">ទំព័រដើម</a></li>
+                        <li><a href="../page/about.html">អំពី</a></li>
+                        <li><a href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ភ្ជាប់ទំនាក់ទំនង</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mt-3">© ២០២៥ CodeKhmerLearning. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="../js/git.js"></script>
+</body>
+</html>
+
+<script>
+    // Sidebar toggle for mobile
+document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+    const sidebarContent = document.querySelector('.sidebar-content');
+    sidebarContent.classList.toggle('active');
+});
+
+// Search functionality
+document.querySelector('.search-box input').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.lesson-list a').forEach(link => {
+        const text = link.textContent.toLowerCase();
+        link.parentElement.style.display = text.includes(query) ? 'block' : 'none';
+    });
+});
+
+// Initialize Ace Editor
+const editors = document.querySelectorAll('.code-editor');
+editors.forEach((editor, index) => {
+    const aceEditor = ace.edit(editor);
+    aceEditor.setTheme('ace/theme/monokai');
+    aceEditor.session.setMode('ace/mode/bash');
+    let defaultCode = `git --version`;
+    if (index === 1) { // Initialize Repository
+        defaultCode = `git init`;
+    } else if (index === 2) { // Branch
+        defaultCode = `git branch feature\ngit checkout feature`;
+    } else if (index === 3) { // Merge
+        defaultCode = `git checkout main\ngit merge feature`;
+    }
+    aceEditor.setValue(defaultCode);
+});
+
+// Simulate Git command output
+document.querySelectorAll('.run-code').forEach(button => {
+    button.addEventListener('click', () => {
+        const editor = button.previousElementSibling.querySelector('.code-editor');
+        const aceEditor = ace.edit(editor);
+        const code = aceEditor.getValue().trim();
+        const output = button.nextElementSibling;
+        let result = '';
+        if (code === 'git --version') {
+            result = 'git version 2.39.2';
+        } else if (code === 'git init') {
+            result = 'Initialized empty Git repository in /path/to/repo/.git/';
+        } else if (code === 'git branch feature\ngit checkout feature') {
+            result = 'Switched to branch "feature"';
+        } else if (code === 'git checkout main\ngit merge feature') {
+            result = 'Merge made by the recursive strategy.\n file.txt | 2 +-\n 1 file changed, 1 insertion(+), 1 deletion(-)';
+        } else {
+            result = 'Error: Unrecognized command or invalid syntax';
+        }
+        output.innerHTML = `<pre style="margin:0;padding:0;background:none;border:none;">${result}</pre>`;
+    });
+});
+</script>

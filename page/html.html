@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="រៀន HTML ជាមួយ CodeKhmerLearning ដើម្បីបង្កើតគេហទំព័រដ៏ស្រស់ស្អាត!">
+    <meta name="keywords" content="HTML, សរសេរកម្មវិធី, គេហទំព័រ, ខ្មែរ, CodeKhmerLearning">
+    <meta name="author" content="CodeKhmerLearning">
+    <title>មេរៀន HTML - CodeKhmerLearning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="../css/html.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Code<span class="khmer-text">Khmer</span>Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/about.html">អំពី</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="main-text">មេរៀន HTML</h1>
+                <p class="description">រៀន HTML ដើម្បីបង្កើតគេហទំព័រស្រស់ស្អាតនិងទំនើប!</p>
+                <a href="#content" class="btn btn-cta mt-3">ចាប់ផ្តើមឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar and Content -->
+    <div class="container-flex d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h4>មេរៀន HTML</h4>
+                <button class="sidebar-toggle btn btn-primary d-md-none">បិទ/បើកម៉ឺនុយ</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="search-container mb-3">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="ស្វែងរកមេរៀន..." aria-label="ស្វែងរកមេរៀន">
+                    </div>
+                </div>
+                <ul class="lesson-list">
+                    <li><a href="#introduction">1. ការណែនាំអំពី HTML</a></li>
+                    <li><a href="#overview">1.1. សេចក្តីពិពណ៌នាអំពី HTML</a></li>
+                    <li><a href="#history">1.2. ប្រវត្តិសង្ខេប HTML</a></li>
+                    <li><a href="#structure">1.3. រចនាសម្ព័ន្ធ HTML</a></li>
+                    <li><a href="#editors">1.4. កម្មវិធីនិពន្ធ HTML</a></li>
+                    <li><a href="#tags">2. ស្លាក HTML</a></li>
+                    <li><a href="#basictags">2.1. ស្លាកជាមូលដ្ឋាន</a></li>
+                    <li><a href="#attributes">2.2. គុណលក្ខណៈ</a></li>
+                    <li><a href="#formatting">2.3. ការធ្វើទ្រង់ទ្រាយអត្ថបទ</a></li>
+                    <li><a href="#links">3. តំណភ្ជាប់</a></li>
+                    <li><a href="#images">4. រូបភាព</a></li>
+                    <li><a href="#lists">5. បញ្ជី</a></li>
+                    <li><a href="#tables">6. តារាង</a></li>
+                    <li><a href="#forms">7. ទម្រង់បញ្ចូល</a></li>
+                    <li><a href="#semantic">8. ស្លាកសម័យទំនើប</a></li>
+                    <li><a href="#accessibility">9. ភាពអាចចូលប្រើបាន</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content" id="content">
+            <h1 id="introduction">1. ការណែនាំអំពី HTML</h1>
+            <p>HTML ជាភាសាសម្រាប់បង្កើតគេហទំព័រនៅលើអ៊ីនធឺណិត។</p>
+            <p>វាកំណត់រចនាសម្ព័ន្ធនិងខ្លឹមសារនៃទំព័របណ្តាញ។</p>
+
+            <h2 id="overview">1.1. សេចក្តីពិពណ៌នាអំពី HTML</h2>
+            <p>HTML ជា HyperText Markup Language សម្រាប់រៀបចំទំព័រ។</p>
+            <p>ប្រើស្លាកដើម្បីកំណត់ធាតុដូចជា អត្ថបទ និងរូបភាព។</p>
+
+            <h2 id="history">1.2. ប្រវត្តិសង្ខេប HTML</h2>
+            <p>HTML បង្កើតដោយ Tim Berners-Lee ក្នុងឆ្នាំ 1990។</p>
+            <p>HTML5 ជាកំណែទំនើបចុងក្រោយបំផុត។</p>
+
+            <h2 id="structure">1.3. រចនាសម្ព័ន្ធ HTML</h2>
+            <p>ឯកសារ HTML ចាប់ផ្តើមដោយ <code>&lt;!DOCTYPE html&gt;</code>។</p>
+            <p>មានស្លាក <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>។</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;ទំព័រដំបូង&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;សួស្តី!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតទំព័របង្ហាញ "សួស្តី ខ្ញុំរៀន HTML!"</p>
+                <div class="code-editor" id="editor1"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output1"></div>
+            </div>
+
+            <h2 id="editors">1.4. កម្មវិធីនិពន្ធ HTML</h2>
+            <p>ប្រើ VS Code, Notepad++ ឬ Sublime Text។</p>
+            <p>រក្សាទុកឯកសារជា <code>.html</code>។</p>
+
+            <h2 id="tags">2. ស្លាក HTML</h2>
+            <p>ស្លាកកំណត់ធាតុនៅក្នុងទំព័របណ្តាញ។</p>
+            <p>ឧទាហរណ៍៖ <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code>។</p>
+
+            <h3 id="basictags">2.1. ស្លាកជាមូលដ្ឋាន</h3>
+            <p>ស្លាក <code>&lt;h1&gt;</code> ដល់ <code>&lt;h6&gt;</code> សម្រាប់ចំណងជើង។</p>
+            <p><code>&lt;p&gt;</code> សម្រាប់កថាខណ្ឌអត្ថបទ។</p>
+            <pre><code class="language-html">&lt;h1&gt;ចំណងជើង&lt;/h1&gt;
+&lt;p&gt;អត្ថបទ&lt;/p&gt;
+</code></pre>
+
+            <h3 id="attributes">2.2. គុណលក្ខណៈ</h3>
+            <p>គុណលក្ខណៈផ្តល់ព័ត៌មានបន្ថែមដល់ស្លាក។</p>
+            <p>ឧទាហរណ៍៖ <code>id</code>, <code>class</code>, <code>style</code>។</p>
+            <pre><code class="language-html">&lt;p id="text"&gt;អត្ថបទ&lt;/p&gt;
+</code></pre>
+
+            <h3 id="formatting">2.3. ការធ្វើទ្រង់ទ្រាយអត្ថបទ</h3>
+            <p>ប្រើ <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code> សម្រាប់ដិតនិងទ្រេត។</p>
+            <p><code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> សម្រាប់សង្កត់ធ្ងន់។</p>
+            <pre><code class="language-html">&lt;b&gt;ដិត&lt;/b&gt; &lt;i&gt;ទ្រេត&lt;/i&gt;
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតចំណងជើងនិងអត្ថបទដិត។</p>
+                <div class="code-editor" id="editor2"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output2"></div>
+            </div>
+
+            <h2 id="links">3. តំណភ្ជាប់</h2>
+            <p>ស្លាក <code>&lt;a&gt;</code> បង្កើតតំណភ្ជាប់ទៅទំព័រផ្សេង។</p>
+            <p>ប្រើគុណលក្ខណៈ <code>href</code> សម្រាប់អាសយដ្ឋាន។</p>
+            <pre><code class="language-html">&lt;a href="https://example.com"&gt;ចុចទីនេះ&lt;/a&gt;
+</code></pre>
+
+            <h2 id="images">4. រូបភាព</h2>
+            <p>ស្លាក <code>&lt;img&gt;</code> បង្ហាញរូបភាព។</p>
+            <p>ប្រើ <code>src</code> និង <code>alt</code> សម្រាប់បរិយាយ។</p>
+            <pre><code class="language-html">&lt;img src="image.jpg" alt="រូបភាព"&gt;
+</code></pre>
+
+            <h2 id="lists">5. បញ្ជី</h2>
+            <p>បញ្ជីមាន <code>&lt;ul&gt;</code> (គ្មានលំដាប់) និង <code>&lt;ol&gt;</code> (មានលំដាប់)។</p>
+            <p>ធាតុបញ្ជីប្រើ <code>&lt;li&gt;</code>។</p>
+            <pre><code class="language-html">&lt;ul&gt;
+    &lt;li&gt;ធាតុ 1&lt;/li&gt;
+    &lt;li&gt;ធាតុ 2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+            <h2 id="tables">6. តារាង</h2>
+            <p>ស្លាក <code>&lt;table&gt;</code> បង្កើតតារាងទិន្នន័យ។</p>
+            <p>ប្រើ <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>។</p>
+            <pre><code class="language-html">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;ក្បាល&lt;/th&gt;
+        &lt;td&gt;ទិន្នន័យ&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+            <h2 id="forms">7. ទម្រង់បញ្ចូល</h2>
+            <p>ស្លាក <code>&lt;form&gt;</code> បង្កើតទម្រង់សម្រាប់ទិន្នន័យ។</p>
+            <p>ប្រើ <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>។</p>
+            <pre><code class="language-html">&lt;form&gt;
+    &lt;label&gt;ឈ្មោះ:&lt;/label&gt;
+    &lt;input type="text"&gt;
+&lt;/form&gt;
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតទម្រង់បញ្ចូលឈ្មោះ។</p>
+                <div class="code-editor" id="editor3"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output3"></div>
+            </div>
+
+            <h2 id="semantic">8. ស្លាកសម័យទំនើប</h2>
+            <p>ស្លាក HTML5 ដូចជា <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>។</p>
+            <p>ធ្វើឱ្យកូដច្បាស់លាស់និងងាយស្វែងរក។</p>
+            <pre><code class="language-html">&lt;header&gt;បឋមកថា&lt;/header&gt;
+&lt;footer&gt;បាតកថា&lt;/footer&gt;
+</code></pre>
+
+            <h2 id="accessibility">9. ភាពអាចចូលប្រើបាន</h2>
+            <p>ប្រើ <code>alt</code>, <code>aria-label</code> សម្រាប់អ្នកប្រើពិការ។</p>
+            <p>ធ្វើឱ្យគេហទំព័រងាយប្រើសម្រាប់មនុស្សគ្រប់គ្នា។</p>
+        </div>
+    </div>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/CodeKhmerLearning" class="floating-button" aria-label="ចូល Telegram">
+        <i class="fab fa-telegram-plane"></i> ចូល Telegram
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="khmer-text">CodeKhmerLearning</h4>
+                    <p>ផ្តល់អំណាចដល់ជំនាន់ក្រោយនៃអ្នកសរសេរកូដជាមួយនឹងមោទនភាពខ្មែរ។</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">ទំព័រដើម</a></li>
+                        <li><a href="../page/about.html">អំពី</a></li>
+                        <li><a href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ភ្ជាប់ទំនាក់ទំនង</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mt-3">© ២០២៥ CodeKhmerLearning. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+    <script src="../js/html.js"></script>
+</body>
+</html>
+
+
+<script>
+    // Sidebar toggle for mobile
+document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+    const sidebarContent = document.querySelector('.sidebar-content');
+    sidebarContent.classList.toggle('active');
+});
+
+// Search functionality
+document.querySelector('.search-box input').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.lesson-list a').forEach(link => {
+        const text = link.textContent.toLowerCase();
+        link.parentElement.style.display = text.includes(query) ? 'block' : 'none';
+    });
+});
+
+// Initialize Ace Editor
+const editors = document.querySelectorAll('.code-editor');
+editors.forEach((editor, index) => {
+    const aceEditor = ace.edit(editor);
+    aceEditor.setTheme('ace/theme/monokai');
+    aceEditor.session.setMode('ace/mode/html');
+    aceEditor.setValue(`<!DOCTYPE html>\n<html>\n<head>\n    <title>ទំព័រដំបូង</title>\n</head>\n<body>\n    <h1>សួស្តី ខ្ញុំរៀន HTML!</h1>\n</body>\n</html>`);
+});
+
+// Display HTML output in iframe
+document.querySelectorAll('.run-code').forEach(button => {
+    button.addEventListener('click', () => {
+        const editor = button.previousElementSibling.querySelector('.code-editor');
+        const aceEditor = ace.edit(editor);
+        const code = aceEditor.getValue();
+        const output = button.nextElementSibling;
+        output.innerHTML = `<iframe style="width:100%;height:100px;border:none;"></iframe>`;
+        const iframe = output.querySelector('iframe');
+        iframe.contentDocument.open();
+        iframe.contentDocument.write(code);
+        iframe.contentDocument.close();
+    });
+});
+</script>

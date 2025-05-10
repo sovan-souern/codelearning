@@ -1,0 +1,17 @@
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-right: 1px solid #dee2e6;
+    padding: 1.5rem;
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}

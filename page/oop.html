@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="រៀនការសរសេរកម្មវិធីបែបវត្ថុនិយម (OOP) ជាមួយ Python នៅ CodeKhmerLearning!">
+    <meta name="keywords" content="OOP, Python, ការសរសេរកម្មវិធីបែបវត្ថុនិយម, CodeKhmerLearning">
+    <meta name="author" content="CodeKhmerLearning">
+    <title>មេរៀន OOP ជាមួយ Python - CodeKhmerLearning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="../css/python.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Code<span class="khmer-text">Khmer</span>Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/about.html">អំពី</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="main-text">មេរៀន OOP ជាមួយ Python</h1>
+                <p class="description">ស្វែងយល់ពីការសរសេរកម្មវិធីបែបវត្ថុនិយមដើម្បីបង្កើតកូដប្រកបដោយរចនាសម្ព័ន្ធ!</p>
+                <a href="#content" class="btn btn-cta mt-3">ចាប់ផ្តើមឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar and Content -->
+    <div class="container-flex d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h4>មេរៀន OOP</h4>
+                <button class="sidebar-toggle btn btn-primary d-md-none">បិទ/បើកម៉ឺនុយ</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="search-container mb-3">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="ស្វែងរកមេរៀន..." aria-label="ស្វែងរកមេរៀន">
+                    </div>
+                </div>
+                <ul class="lesson-list">
+                    <li><a href="#introduction">1. ការណែនាំអំពី OOP</a></li>
+                    <li><a href="#classes">2. ថ្នាក់ (Classes)</a></li>
+                    <li><a href="#objects">3. វត្ថុ (Objects)</a></li>
+                    <li><a href="#attributes">4. គុណលក្ខណៈ (Attributes)</Laboratory
+                    <li><a href="#methods">5. វិធីសាស្ត្រ (Methods)</a></li>
+                    <li><a href="#inheritance">6. ការទទួលមរតក (Inheritance)</a></li>
+                    <li><a href="#polymorphism">7. ពហុរូបភាព (Polymorphism)</a></li>
+                    <li><a href="#encapsulation">8. ការវេចខ្ចប់ (Encapsulation)</a></li>
+                    <li><a href="#abstraction">9. ការអរូបីករណ៍ (Abstraction)</a></li>
+                    <li><a href="#bestpractices">10. ការអនុវត្តល្អបំផុត</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content" id="content">
+            <h1 id="introduction">1. ការណែនាំអំពី OOP</h1>
+            <p>ការសរសេរកម្មវិធីបែបវត្ថុនិយម (OOP) ជួយរៀបចំកូដដោយប្រើថ្នាក់និងវត្ថុ។</p>
+            <p>វាផ្តល់នូវរចនាសម្ព័ន្ធ និងភាពអាចប្រើឡើងវិញបាន។</p>
+
+            <h2 id="classes">2. ថ្នាក់ (Classes)</h2>
+            <p>ថ្នាក់គឺជាប្លង់សម្រាប់បង្កើតវត្ថុ។</p>
+            <p>ប្រើពាក្យគន្លឹះ <code>class</code> ដើម្បីកំណត់ថ្នាក់។</p>
+            <pre><code class="language-python">class Person:
+    pass
+</code></pre>
+
+            <h2 id="objects">3. វត្ថុ (Objects)</h2>
+            <p>វត្ថុគឺជាការបង្កើតពីថ្នាក់។</p>
+            <p>ឧទាហរណ៍ បង្កើតវត្ថុនៃថ្នាក់ Person។</p>
+            <pre><code class="language-python">class Person:
+    pass
+
+person1 = Person()
+print(person1)
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតវត្ថុពីថ្នាក់ Person និងបោះពុម្ពវា។</p>
+                <div class="code-editor" id="editor1"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output1"></div>
+            </div>
+
+            <h2 id="attributes">4. គុណលក្ខណៈ (Attributes)</h2>
+            <p>គុណលក្ខណៈគឺជាទិន្នន័យរបស់វត្ថុ។</p>
+            <p>កំណត់គុណលក្ខណៈដោយប្រើ <code>__init__</code>។</p>
+            <pre><code class="language-python">class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person1 = Person("Sokha", 25)
+print(person1.name)
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតវត្ថុជាមួយគុណលក្ខណៈ និងបោះពុម្ពឈ្មោះ។</p>
+                <div class="code-editor" id="editor2"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output2"></div>
+            </div>
+
+            <h2 id="methods">5. វិធីសាស្ត្រ (Methods)</h2>
+            <p>វិធីសាស្ត្រគឺជាអនុគមន៍របស់ថ្នាក់។</p>
+            <p>ឧទាហរណ៍ បង្កើតវិធីសាស្ត្រសម្រាប់សួស្តី។</p>
+            <pre><code class="language-python">class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    def greet(self):
+        return f"សួស្តី, ខ្ញុំឈ្មោះ {self.name}!"
+
+person1 = Person("Sokha")
+print(person1.greet())
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតវិធីសាស្ត្រសួស្តីនិងហៅវា។</p>
+                <div class="code-editor" id="editor3"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output3"></div>
+            </div>
+
+            <h2 id="inheritance">6. ការទទួលមរតក (Inheritance)</h2>
+            <p>ការទទួលមរតកអនុញ្ញាតឱ្យថ្នាក់មួយទទួលគុណលក្ខណៈនិងវិធីសាស្ត្រពីថ្នាក់ផ្សេង។</p>
+            <p>ឧទាហរណ៍ ថ្នាក់ Student ទទួលមរតកពី Person។</p>
+            <pre><code class="language-python">class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    def greet(self):
+        return f"សួស្តី, ខ្ញុំឈ្មោះ {self.name}!"
+
+class Student(Person):
+    def __init__(self, name, grade):
+        super().__init__(name)
+        self.grade = grade
+
+student1 = Student("Sokha", "A")
+print(student1.greet())
+print(student1.grade)
+</code></pre>
+
+            <h2 id="polymorphism">7. ពហុរូបភាព (Polymorphism)</h2>
+            <p>ពហុរូបភាពអនុញ្ញាតឱ្យវត្ថុផ្សេងគ្នាឆ្លើយតបទៅនឹងវិធីសាស្ត្រដូចគ្នា។</p>
+            <p>ឧទាហរណ៍ វិធីសាស្ត្រផ្សេងគ្នាសម្រាប់ថ្នាក់ផ្សេងៗ។</p>
+            <pre><code class="language-python">class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "វ៉ុហ្វ!"
+
+class Cat(Animal):
+    def speak(self):
+        return "ម៉ាវ!"
+
+dog = Dog()
+cat = Cat()
+print(dog.speak())
+print(cat.speak())
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើតថ្នាក់ Animal និងថ្នាក់កូនសម្រាប់ពហុរូបភាព។</p>
+                <div class="code-editor" id="editor4"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output4"></div>
+            </div>
+
+            <h2 id="encapsulation">8. ការវេចខ្ចប់ (Encapsulation)</h2>
+            <p>ការវេចខ្ចប់លាក់ទិន្នន័យឯកជនដោយប្រើ <code>__</code>។</p>
+            <p>ឧទាហរណ៍ គ្រប់គ្រងទិន្នន័យឯកជន។</p>
+            <pre><code class="language-python">class Person:
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
+    
+    def get_name(self):
+        return self.__name
+
+person1 = Person("Sokha", 25)
+print(person1.get_name())
+</code></pre>
+
+            <h2 id="abstraction">9. ការអរូបីករណ៍ (Abstraction)</h2>
+            <p>ការអរូបីករណ៍បង្ហាញតែព័ត៌មានចាំបាច់ប៉ុណ្ណោះ។</p>
+            <p>ប្រើ <code>abc</code> module ស democracia
+            <pre><code class="language-python">from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+circle = Circle(5)
+print(circle.area())
+</code></pre>
+
+            <h2 id="bestpractices">10. ការអនុវត្តល្អបំផុត</h2>
+            <p>ប្រើឈ្មោះថ្នាក់និងវិធីសាស្ត្រដែលមានន័យ។</p>
+            <p>អនុវត្តការវេចខ្ចប់ និងរៀបចំកូដឱ្យស្អាត។</p>
+            <pre><code class="language-python"># ឧទាហរណ៍ថ្នាក់ស្អាត
+class Employee:
+    def __init__(self, name, salary):
+        self.__name = name
+        self.__salary = salary
+    
+    def get_info(self):
+        return f"ឈ្មោះ: {self.__name}, ប្រាក់ខែ: {self.__salary}"
+
+employee = Employee("Sokha", 50000)
+print(employee.get_info())
+</code></pre>
+        </div>
+    </div>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/CodeKhmerLearning" class="floating-button" aria-label="ចូល Telegram">
+        <i class="fab fa-telegram-plane"></i> ចូល Telegram
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="khmer-text">CodeKhmerLearning</h4>
+                    <p>ផ្តល់អំណាចដល់ជំនាន់ក្រោយនៃអ្នកសរសេរកូដជាមួយនឹងមោទនភាពខ្មែរ។</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">ទំព័រដើម</a></li>
+                        <li><a href="../page/about.html">អំពី</a></li>
+                        <li><a href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ភ្ជាប់ទំនាក់ទំនង</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mt-3">© ២០២៥ CodeKhmerLearning. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script>
+        // Sidebar toggle for mobile
+        document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+            const sidebarContent = document.querySelector('.sidebar-content');
+            sidebarContent.classList.toggle('active');
+        });
+
+        // Search functionality
+        document.querySelector('.search-box input').addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            document.querySelectorAll('.lesson-list a').forEach(link => {
+                const text = link.textContent.toLowerCase();
+                Magdalen link.parentElement.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        });
+
+        // Initialize Ace Editor
+        const editors = document.querySelectorAll('.code-editor');
+        editors.forEach((editor, index) => {
+            const aceEditor = ace.edit(editor);
+            aceEditor.setTheme('ace/theme/monokai');
+            aceEditor.session.setMode('ace/mode/python');
+            let defaultCode = `class Person:\n    pass\n\nperson1 = Person()\nprint(person1)`;
+            if (index === 1) { // Attributes
+                defaultCode = `class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nperson1 = Person("Sokha", 25)\nprint(person1.name)`;
+            } else if (index === 2) { // Methods
+                defaultCode = `class Person:\n    def __init__(self, name):\n        self.name = name\n    \n    def greet(self):\n        return f"សួស្តី, ខ្ញុំឈ្មោះ {self.name}!"\n\nperson1 = Person("Sokha")\nprint(person1.greet())`;
+            } else if (index === 3) { // Polymorphism
+                defaultCode = `class Animal:\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return "វ៉ុហ្វ!"\n\nclass Cat(Animal):\n    def speak(self):\n        return "ម៉ាវ!"\n\ndog = Dog()\ncat = Cat()\nprint(dog.speak())\nprint(cat.speak())`;
+            }
+            aceEditor.setValue(defaultCode);
+        });
+
+        // Simulate Python command output
+        document.querySelectorAll('.run-code').forEach(button => {
+            button.addEventListener('click', () => {
+                const editor = button.previousElementSibling.querySelector('.code-editor');
+                const aceEditor = ace.edit(editor);
+                const code = aceEditor.getValue().trim();
+                const output = button.nextElementSibling;
+                let result = '';
+                if (code === 'class Person:\n    pass\n\nperson1 = Person()\nprint(person1)') {
+                    result = '<__main__.Person object at 0x...>';
+                } else if (code === 'class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nperson1 = Person("Sokha", 25)\nprint(person1.name)') {
+                    result = 'Sokha';
+                } else if (code === 'class Person:\n    def __init__(self, name):\n        self.name = name\n    \n    def greet(self):\n        return f"សួស្តី, ខ្ញុំឈ្មោះ {self.name}!"\n\nperson1 = Person("Sokha")\nprint(person1.greet())') {
+                    result = 'សួស្តី, ខ្ញុំឈ្មោះ Sokha!';
+                } else if (code === 'class Animal:\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return "វ៉ុហ្វ!"\n\nclass Cat(Animal):\n    def speak(self):\n        return "ម៉ាវ!"\n\ndog = Dog()\ncat = Cat()\nprint(dog.speak())\nprint(cat.speak())') {
+                    result = 'វ៉ុហ្វ!\nម៉ាវ!';
+                } else {
+                    result = 'Error: Unrecognized code or invalid syntax';
+                }
+                output.innerHTML = `<pre style="margin:0;padding:0;background:none;border:none;">${result}</pre>`;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="រៀន React ជាមួយ CodeKhmerLearning ដើម្បីបង្កើតគេហទំព័រអន្តរកម្មប្រកបដោយថាមពល!">
+    <meta name="keywords" content="React, JavaScript, Web Development, ខ្មែរ, CodeKhmerLearning">
+    <meta name="author" content="CodeKhmerLearning">
+    <title>មេរៀន React - CodeKhmerLearning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="../css/react.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Code<span class="khmer-text">Khmer</span>Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/about.html">អំពី</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="main-text">មេរៀន React</h1>
+                <p class="description">រៀន React ដើម្បីបង្កើតគេហទំព័រអន្តរកម្មនិងទំនើបជាមួយ JavaScript!</p>
+                <a href="#content" class="btn btn-cta mt-3">ចាប់ផ្តើមឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar and Content -->
+    <div class="container-flex d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h4>មេរៀន React</h4>
+                <button class="sidebar-toggle btn btn-primary d-md-none">បិទ/បើកម៉ឺនុយ</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="search-container mb-3">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="ស្វែងរកមេរៀន..." aria-label="ស្វែងរកមេរៀន">
+                    </div>
+                </div>
+                <ul class="lesson-list">
+                    <li><a href="#introduction">1. ការណែនាំអំពី React</a></li>
+                    <li><a href="#overview">1.1. សេចក្តីពិពណ៌នាអំពី React</a></li>
+                    <li><a href="#setup">1.2. ការដំឡើង React</a></li>
+                    <li><a href="#components">2. សមាសធាតុ (Components)</a></li>
+                    <li><a href="#jsx">3. JSX និង Syntax</a></li>
+                    <li><a href="#props">4. Props និង State</a></li>
+                    <li><a href="#events">5. ការគ្រប់គ្រង Events</a></li>
+                    <li><a href="#hooks">6. Hooks នៅក្នុង React</a></li>
+                    <li><a href="#routing">7. ការប្រើ React Router</a></li>
+                    <li><a href="#state-management">8. ការគ្រប់គ្រង State</a></li>
+                    <li><a href="#api">9. ការភ្ជាប់ជាមួយ API</a></li>
+                    <li><a href="#bestpractices">10. ការអនុវត្តល្អបំផុត</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content" id="content">
+            <h1 id="introduction">1. ការណែនាំអំពី React</h1>
+            <p>React ជា JavaScript library សម្រាប់បង្កើត user interfaces ដែលមានភាពអន្តរកម្ម។</p>
+            <p>វាត្រូវបានបង្កើតដោយ Facebook និងប្រើសម្រាប់គម្រោងទំនើប។</p>
+
+            <h2 id="overview">1.1. សេចក្តីពិពណ៌នាអំពី React</h2>
+            <p>React ប្រើ component-based architecture ដើម្បីបង្កើត UI ដែលអាចប្រើឡើងវិញបាន។</p>
+            <p>វាមាន virtual DOM ដែលធ្វើឱ្យការបង្ហាញទិន្នន័យមានល្បឿនលឿន។</p>
+
+            <h2 id="setup">1.2. ការដំឡើង React</h2>
+            <p>ប្រើ CDN ឬ Create React App ដើម្បីចាប់ផ្តើមជាមួយ React។</p>
+            <p>ឧទាហរណ៍ បន្ថែម React តាម CDN។</p>
+            <pre><code class="language-html"><script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.22.5/babel.min.js"></script>
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បន្ថែម React CDN ទៅក្នុង HTML។</p>
+                <div class="code-editor" id="editor1"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output1"></div>
+            </div>
+
+            <h2 id="components">2. សមាសធាតុ (Components)</h2>
+            <p>Components ជាបំណែកនៃ UI ដែលអាចប្រើឡើងវិញបាន។</p>
+            <p>ឧទាហរណ៍ បង្កើត component សាមញ្ញ។</p>
+            <pre><code class="language-jsx">function Welcome() {
+    return <h1>សួស្តីពី React!</h1>;
+}
+ReactDOM.render(<Welcome />, document.getElementById('root'));
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើត component ដែលបង្ហាញសារសួស្តី។</p>
+                <div class="code-editor" id="editor2"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output2"></div>
+            </div>
+
+            <h2 id="jsx">3. JSX និង Syntax</h2>
+            <p>JSX ជា syntax extension សម្រាប់ JavaScript ដែលអនុញ្ញាតឱ្យសរសេរ HTML នៅក្នុង JavaScript។</p>
+            <p>ឧទាហរណ៍ ប្រើ JSX ដើម្បីបង្ហាញធាតុ។</p>
+            <pre><code class="language-jsx">const element = <div className="text-blue-500">សួស្តី JSX!</div>;
+ReactDOM.render(element, document.getElementById('root'));
+</code></pre>
+
+            <h2 id="props">4. Props និង State</h2>
+            <p>Props បញ្ជូនទិន្នន័យទៅ components ខណៈ state គ្រប់គ្រងទិន្នន័យផ្ទៃក្នុង។</p>
+            <p>ឧទាហរណ៍ ប្រើ props និង state។</p>
+            <pre><code class="language-jsx">function Greeting(props) {
+    const [count, setCount] = React.useState(0);
+    return (
+        <div>
+            <h2>សួស្តី {props.name}!</h2>
+            <p>ចុច: {count}</p>
+            <button onClick={() => setCount(count + 1)}>បន្ថែម</button>
+        </div>
+    );
+}
+ReactDOM.render(<Greeting name="Sokha" />, document.getElementById('root'));
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើត component ដែលប្រើ props និង state ដើម្បីរាប់ចំនួនចុច។</p>
+                <div class="code-editor" id="editor3"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output3"></div>
+            </div>
+
+            <h2 id="events">5. ការគ្រប់គ្រង Events</h2>
+            <p>React ប្រើ event handlers ដើម្បីឆ្លើយតបនឹងសកម្មភាពអ្នកប្រើ។</p>
+            <p>ឧទាហរណ៍ គ្រប់គ្រង click event។</p>
+            <pre><code class="language-jsx">function Button() {
+    const handleClick = () => alert('ប៊ូតុងត្រូវបានចុច!');
+    return <button onClick={handleClick}>ចុចខ្ញុំ</button>;
+}
+ReactDOM.render(<Button />, document.getElementById('root'));
+</code></pre>
+
+            <h2 id="hooks">6. Hooks នៅក្នុង React</h2>
+            <p>Hooks អនុញ្ញាតឱ្យប្រើ state និង features ផ្សេងទៀតនៅក្នុង functional components។</p>
+            <p>ឧទាហរណ៍ ប្រើ <code>useState</code> និង <code>useEffect</code>។</p>
+            <pre><code class="language-jsx">function Counter() {
+    const [count, setCount] = React.useState(0);
+    React.useEffect(() => {
+        document.title = `ចុច: ${count}`;
+    }, [count]);
+    return (
+        <div>
+            <p>ចុច: {count}</p>
+            <button onClick={() => setCount(count + 1)}>បន្ថែម</button>
+        </div>
+    );
+}
+ReactDOM.render(<Counter />, document.getElementById('root'));
+</code></pre>
+
+            <h2 id="routing">7. ការប្រើ React Router</h2>
+            <p>React Router អនុញ្ញាតឱ្យបង្កើត navigation នៅក្នុង single-page applications។</p>
+            <p>ឧទាហរណ៍ បង្កើត routes សាមញ្ញ។</p>
+            <pre><code class="language-jsx">import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+function App() {
+    return (
+        <BrowserRouter>
+            <nav>
+                <Link to="/">ទំព័រដើម</Link> | <Link to="/about">អំពី</Link>
+            </nav>
+            <Routes>
+                <Route path="/" element={<h1>ទំព័រដើម</h1>} />
+                <Route path="/about" element={<h1>អំពី</h1>} />
+            </Routes>
+        </BrowserRouter>
+    );
+}
+ReactDOM.render(<App />, document.getElementById('root'));
+</code></pre>
+
+            <h2 id="state-management">8. ការគ្រប់គ្រង State</h2>
+            <p>ប្រើ Context API ឬ Redux សម្រាប់ការគ្រប់គ្រង state សកល។</p>
+            <p>ឧទាហរណ៍ ប្រើ Context API។</p>
+            <pre><code class="language-jsx">const ThemeContext = React.createContext('light');
+function App() {
+    return (
+        <ThemeContext.Provider value="dark">
+            <Toolbar />
+        </ThemeContext.Provider>
+    );
+}
+function Toolbar() {
+    const theme = React.useContext(ThemeContext);
+    return <div>Theme: {theme}</div>;
+}
+ReactDOM.render(<App />, document.getElementById('root'));
+</code></pre>
+
+            <h2 id="api">9. ការភ្ជាប់ជាមួយ API</h2>
+            <p>ប្រើ <code>fetch</code> ឬ <code>axios</code> ដើម្បីទាញទិន្នន័យពី API។</p>
+            <p>ឧទាហរណ៍ ទាញទិន្នន័យអ្នកប្រើ។</p>
+            <pre><code class="language-jsx">function UserList() {
+    const [users, setUsers] = React.useState([]);
+    React.useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(data => setUsers(data));
+    }, []);
+    return (
+        <ul>
+            {users.map(user => <li key={user.id}>{user.name}</li>)}
+        </ul>
+    );
+}
+ReactDOM.render(<UserList />, document.getElementById('root'));
+</code></pre>
+            <div class="try-it">
+                <h3>សាកល្បង៖</h3>
+                <p>បង្កើត component ដែលទាញបញ្ជីអ្នកប្រើពី API។</p>
+                <div class="code-editor" id="editor4"></div>
+                <button class="btn btn-primary run-code">មើលលទ្ធផល</button>
+                <div class="output" id="output4"></div>
+            </div>
+
+            <h2 id="bestpractices">10. ការអនុវត្តល្អបំផុត</h2>
+            <p>សរសេរ components ដែលមានភាពសាមញ្ញនិងអាចប្រើឡើងវិញបាន។</p>
+            <p>ប្រើ hooks ដើម្បីគ្រប់គ្រង state និង side effects និងធ្វើការធ្វើតេស្តឱ្យបានទៀងទាត់។</p>
+            <pre><code class="language-jsx">function CleanComponent() {
+    return <div>កូដស្អាត ងាយស្រួលថែទាំ</div>;
+}
+ReactDOM.render(<CleanComponent />, document.getElementById('root'));
+</code></pre>
+        </div>
+    </div>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/CodeKhmerLearning" class="floating-button" aria-label="ចូល Telegram">
+        <i class="fab fa-telegram-plane"></i> ចូល Telegram
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="khmer-text">CodeKhmerLearning</h4>
+                    <p>ផ្តល់អំណាចដល់ជំនាន់ក្រោយនៃអ្នកសរសេរកូដជាមួយនឹងមោទនភាពខ្មែរ។</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">ទំព័រដើម</a></li>
+                        <li><a href="../page/about.html">អំពី</a></li>
+                        <li><a href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ភ្ជាប់ទំនាក់ទំនង</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mt-3">© ២០២៥ CodeKhmerLearning. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.22.5/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
+    <script src="../js/react.js"></script>
+</body>
+</html>

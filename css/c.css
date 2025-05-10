@@ -1,0 +1,358 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1.8rem;
+    color: #ff5733 !important;
+}
+
+.navbar-brand .khmer-text {
+    color: #00c4b4;
+}
+
+.nav-link {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1rem;
+    color: #333 !important;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff5733 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1516321310766-61f6f.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.main-text {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-cta {
+    background: #ff5733;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Sidebar and Content */
+.container-flex {
+    display: flex;
+    min-height: calc(100vh - 60vh - 200px);
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-right: 1px solid #dee2e6;
+    padding: 1.5rem;
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sidebar h4 {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1.8rem;
+    color: #ff5733;
+}
+
+.sidebar-content {
+    display: block;
+}
+
+.lesson-list {
+    list-style: none;
+}
+
+.lesson-list li {
+    margin-bottom: 0.5rem;
+}
+
+.lesson-list a {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.lesson-list a:hover {
+    color: #ff5733;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ff5733;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    background: #fff;
+}
+
+.content h1, .content h2, .content h3 {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    color: #ff5733;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin: 2rem 0 0.5rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.content pre {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.try-it {
+    background: #f1f3f5;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.code-editor {
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.run-code {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    background: #00c4b4;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.run-code:hover {
+    background: #009faf;
+}
+
+.output {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00c4b4;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background: gray;
+    color: #fff;
+}
+
+.footer h4, .footer h5 {
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00c4b4;
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-section {
+        height: 50vh;
+    }
+    .main-text {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .sidebar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-flex {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        position: static;
+        box-shadow: none;
+    }
+    .sidebar-content {
+        display: none;
+    }
+    .sidebar-content.active {
+        display: block;
+    }
+    .content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    .main-text {
+        font-size: 2rem;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content h2 {
+        font-size: 1.8rem;
+    }
+}
