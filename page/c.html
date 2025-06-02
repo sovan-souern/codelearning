@@ -11,21 +11,327 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <!-- Enhanced styles similar to about page -->
+    <style>
+               :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Noto Sans Khmer', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+        }
+
+        .khmer-text {
+            font-family: 'Noto Sans Khmer', sans-serif;
+            color: var(--accent-color);
+        }
+
+        /* Enhanced Navbar Styles */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: var(--primary-color) !important;
+            transition: transform 0.3s ease;
+            font-weight: 700;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--text-dark) !important;
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem !important;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::before {
+            width: 80%;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            min-height: 40vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.08)"><polygon points="0,0 1000,100 1000,0"/></svg>');
+            background-size: cover;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease;
+        }
+        .main-text {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #fff;
+        }
+        .description {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        .btn-cta {
+            background: linear-gradient(135deg, var(--accent-color), #0077b6);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(0,89,156,0.15);
+        }
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,180,216,0.25);
+            color: white;
+            background: linear-gradient(135deg, #0077b6, var(--accent-color));
+        }
+        .container-flex { display: flex; min-height: calc(100vh - 40vh - 200px); }
+        .sidebar {
+            width: 300px;
+            background-color: #fff;
+            border-right: 1px solid #dee2e6;
+            padding: 1.5rem;
+            position: sticky;
+            top: 56px;
+            height: calc(100vh - 56px);
+            overflow-y: auto;
+        }
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .sidebar h4 {
+            font-family: 'Noto Sans Khmer', sans-serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        .sidebar-content { display: block; }
+        .lesson-list { list-style: none; }
+        .lesson-list li { margin-bottom: 0.5rem; }
+        .lesson-list a {
+            font-family: 'Noto Sans Khmer', sans-serif;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .lesson-list a:hover { color: var(--accent-color); }
+        .search-container { display: flex; justify-content: center; }
+        .search-box { position: relative; width: 100%; }
+        .search-box i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 2.5rem;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            font-family: 'Noto Sans Khmer', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        .content {
+            flex-grow: 1;
+            padding: 2rem;
+            background: #fff;
+        }
+        .content h1, .content h2, .content h3 {
+            font-family: 'Noto Sans Khmer', sans-serif;
+            color: var(--primary-color);
+        }
+        .content h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .content h2 { font-size: 2rem; margin: 2rem 0 0.5rem; }
+        .content h3 { font-size: 1.5rem; margin: 1.5rem 0 0.5rem; }
+        .content p { font-size: 1.1rem; line-height: 1.4; margin-bottom: 0.5rem; }
+        .content pre {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .try-it {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        .code-editor {
+            height: 150px;
+            border: 1px solid #b3c6e0;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .run-code {
+            font-family: 'Noto Sans Khmer', sans-serif;
+            background: var(--accent-color);
+            border: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .run-code:hover { background: var(--primary-color); }
+        .output {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Noto Sans Khmer', sans-serif;
+            font-size: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .floating-button:hover { transform: scale(1.1); color: #fff; background: var(--accent-color);}
+        .footer {
+            background: var(--primary-color);
+            color: #fff;
+            margin-top: 4rem;
+        }
+        .footer h4, .footer h5 { color: #fff; margin-bottom: 1rem; }
+        .footer a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover { color: var(--accent-color); }
+        .footer .list-unstyled li { margin-bottom: 0.5rem; }
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            text-align: center;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        @media (max-width: 992px) {
+            .hero-section { min-height: 30vh; }
+            .main-text { font-size: 2.5rem; }
+            .description { font-size: 1rem; }
+            .sidebar { width: 250px; }
+        }
+        @media (max-width: 768px) {
+            .container-flex { flex-direction: column; }
+            .sidebar { width: 100%; position: static; box-shadow: none; }
+            .sidebar-content { display: none; }
+            .sidebar-content.active { display: block; }
+            .content { padding: 1rem; }
+        }
+        @media (max-width: 576px) {
+            .navbar-brand { font-size: 1.5rem; }
+            .nav-link { font-size: 0.9rem; }
+            .main-text { font-size: 2rem; }
+            .content h1 { font-size: 2rem; }
+            .content h2 { font-size: 1.8rem; }
+        }
+    </style>
     <link rel="stylesheet" href="../css/c.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Enhanced Navbar (identical structure to about.html) -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Code<span class="khmer-text">Khmer</span>Learning</a>
+            <a class="navbar-brand fw-bold" href="../index.html">Code<span class="khmer-text">Khmer</span>Learning</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../page/about.html">អំពី</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../page/contact.html">ទំនាក់ទំនង</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">អំពី</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">ទំនាក់ទំនង</a></li>
                 </ul>
             </div>
         </div>
